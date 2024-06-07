@@ -1,0 +1,56 @@
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.logo {
+    border-radius: 15px;
+    border: 6px solid #004d40;
+    width: 130px;
+    background-color: #323232;
+
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.hero-dropdown {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #004d40;
+    background-color: #f0f0f0;
+}
+
+.hero-dropdown:focus {
+    outline: none;
+    border-color: #004d40;
+    background-color: #e0e0e0;
+}
+
+.hero-dropdown option {
+    padding: 8px;
+}
+
+.hero-dropdown:hover {
+    background-color: #e0e0e0;
+    border-color: #003d33;
+  }

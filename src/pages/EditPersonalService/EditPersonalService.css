@@ -1,0 +1,39 @@
+.edit-personal-service {
+    width: 70%;
+    margin-left: max(4.5vw, 20px);
+    margin-top: 50px;
+    color: black;
+    font-size: 18px;
+}
+
+.edit-personal-service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.edit-personal-service-service {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.edit-personal-service-x-icon {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.1s;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #DC143C;
+}
+
+.edit-personal-service-x-icon:hover {
+    color: #9c0d2d;
+    transform: scale(1.4);
+}
