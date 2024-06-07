@@ -43,3 +43,54 @@
 .add-personal-service-add-button:hover {
     background-color: #002520;
 }
+
+@media (max-width: 900px) {
+    .add-personal-service {
+        width: 85%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    .add-personal-service-checkboxes {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        row-gap: 40px;
+    }
+
+    .add-personal-service-label {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .add-personal-service-add-button {
+        width: 40%;
+        height: 45px;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .add-personal-service {
+        width: 95%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .add-personal-service-checkboxes {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        row-gap: 30px;
+    }
+
+    .add-personal-service-label {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .add-personal-service-add-button {
+        width: 60%;
+        height: 40px;
+    }
+}
