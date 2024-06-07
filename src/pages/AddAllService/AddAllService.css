@@ -12,7 +12,8 @@
     gap: 20px;
 }
 
-.add-all-service-image, .add-all-service-image img {
+.add-all-service-image,
+.add-all-service-image img {
     width: 120px;
 }
 
@@ -25,9 +26,10 @@
 
 .add-all-service-image img:hover {
     transform: scale(1.05);
-} 
+}
 
-.add-all-service-name, .add-all-service-name input {
+.add-all-service-name,
+.add-all-service-name input {
     width: max(40%, 280px);
 }
 
@@ -47,7 +49,8 @@
     font-size: 14px;
 }
 
-.add-all-service-cost, .add-all-service-cost input {
+.add-all-service-cost,
+.add-all-service-cost input {
     width: max(20%, 100px);
 }
 
@@ -77,4 +80,62 @@
 
 .add-all-service-toast-success {
     background-color: white;
+}
+
+@media (max-width: 768px) {
+    .add-all-service {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .add-all-service-image,
+    .add-all-service-image img {
+        width: 100px;
+    }
+
+    .add-all-service-name,
+    .add-all-service-name input {
+        width: 100%;
+    }
+
+    .add-all-service-cost,
+    .add-all-service-cost input {
+        width: 50%;
+    }
+
+    .add-all-service-add-button {
+        width: 50%;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-all-service {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+    }
+
+    .add-all-service-image,
+    .add-all-service-image img {
+        width: 80px;
+    }
+
+    .add-all-service-name,
+    .add-all-service-name input {
+        width: 100%;
+    }
+
+    .add-all-service-cost,
+    .add-all-service-cost input {
+        width: 70%;
+    }
+
+    .add-all-service-add-button {
+        width: 70%;
+        height: 40px;
+    }
 }

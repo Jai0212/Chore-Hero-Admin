@@ -5,7 +5,6 @@
     border-top: 0;
     font-size: max(1vw, 10px);
     background-color: transparent;
-
     overflow: hidden;
 }
 
@@ -28,7 +27,6 @@
     border-radius: 3px 0px 0px 3px;
     cursor: pointer;
     background-color: transparent;
-
     transition: all 0.3s;
 }
 
@@ -46,7 +44,51 @@
 }
 
 @media (max-width: 900px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    .sidebar-options {
+        padding-left: 10%;
+    }
+
     .sidebar-option {
-        display: none;
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border: 1px solid #004d40;
+    }
+
+    .sidebar-options {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .sidebar-option {
+        flex: 1;
+        justify-content: center;
+        padding: 10px 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .sidebar-option p {
+        font-size: 12px;
+    }
+
+    .sidebar-option.active {
+        background-color: #004d40;
+        color: white;
+    }
+
+    .sidebar-option:hover {
+        transform: none;
     }
 }
