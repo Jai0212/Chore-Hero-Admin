@@ -16,7 +16,7 @@ const NavigationBar = ({ selectedHero, setSelectedHero }) => {
             </NavLink>
             <div className='right-container'>
                 <select className='hero-dropdown' id="hero-dropdown" value={selectedHero} onChange={handleChange} required>
-                    <option value="" disabled>Select a hero</option>
+                    <option value="" disabled>Select hero</option>
                     {list_of_heroes.map((hero, index) => (
                         <option key={index} value={hero.hero_name}>
                             {hero.hero_name}
