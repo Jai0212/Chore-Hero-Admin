@@ -85,5 +85,3 @@ const AddAllService = () => {
 }
 
 export default AddAllService
-
-// 5:32:00

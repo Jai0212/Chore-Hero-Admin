@@ -21,7 +21,6 @@ hr {
   border: 0;
   height: 1px;
   background-color: #004d40;
-  /* background-color: #e0e0e0; */
 }
 
 .app-container {
@@ -32,6 +31,7 @@ hr {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

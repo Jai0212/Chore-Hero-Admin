@@ -33,7 +33,6 @@
     color: white;
     font-size: 14px;
     cursor: pointer;
-    /* width: 300px; */
     width: 20%;
     height: 50px;
     margin-bottom: 120px;
@@ -69,7 +68,6 @@
     }
 }
 
-/* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
     .add-personal-service {
         width: 95%;

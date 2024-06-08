@@ -65,6 +65,22 @@ const AddPersonalService = ({ selectedHero }) => {
   //   console.log('Checked states updated:', checkedStates);
   // }, [checkedStates]);
 
+  if (list.length === 0) {
+    return (
+      <div className='add-personal-service'>
+        <h2>Loading Services...</h2>
+        <p className="add-personal-service-text">Please wait while we fetch the services.</p>
+        <div className="add-personal-service-checkboxes">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(index => (
+            <div key={index} className="add-personal-service-checkbox skeleton">
+              <div className="skeleton-text"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className='add-personal-service'>
       <form className="add-personal-service-form" onSubmit={onSubmitHandler}>
